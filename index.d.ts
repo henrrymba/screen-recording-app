@@ -69,6 +69,8 @@ declare interface SearchResult {
   } | null;
 }
 
+type Visibility = string
+
 declare interface VideoCardProps {
   id: string;
   title: string;
@@ -77,7 +79,7 @@ declare interface VideoCardProps {
   username: string;
   createdAt: Date;
   views: number;
-  visibility: Visibility;
+  visibility: string;
   duration: number | null;
 }
 
