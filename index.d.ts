@@ -69,7 +69,7 @@ declare interface SearchResult {
   } | null;
 }
 
-type Visibility = string
+
 
 declare interface VideoCardProps {
   id: string;
