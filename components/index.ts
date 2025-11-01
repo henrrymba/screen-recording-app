@@ -4,4 +4,6 @@ export { default as FormField } from './FormField';
 export { default as Header } from './Header';
 export { default as Navbar } from './Navbar';
 export { default as VideoCard } from './VideoCard';
-
+export { default as VideoPlayer } from "./VideoPlayer";
+export { default as EmptyState } from "./EmptyState";
+export { default as VideoDetailHeader } from "./VideoDetailHeader";
