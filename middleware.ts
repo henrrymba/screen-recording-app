@@ -23,7 +23,7 @@ const validate = aj
     .withRule(
         detectBot({
             mode: "LIVE",
-            allow: ["CATEGORY:SEARCH_ENGINE", "G00G1E_CRAWLER"], // allow other bots if you want to.
+            allow: ["CATEGORY:SEARCH_ENGINE", "G00G1E_CRAWLER"],
         })
     );
 
