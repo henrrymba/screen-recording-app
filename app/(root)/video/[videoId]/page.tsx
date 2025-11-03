@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-import { VideoDetailHeader, VideoPlayer } from "@/components";
+import { VideoDetailHeader, VideoInfo, VideoPlayer } from "@/components";
 import { getTranscript, getVideoById } from "@/lib/actions/video";
 
 const page = async ({ params }: Params) => {
@@ -28,7 +28,6 @@ const page = async ({ params }: Params) => {
                 <div className="content">
                     <VideoPlayer videoId={video.videoId} />
                 </div>
-
             </section>
         </main>
     );

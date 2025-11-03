@@ -7,3 +7,5 @@ export { default as VideoCard } from './VideoCard';
 export { default as VideoPlayer } from "./VideoPlayer";
 export { default as EmptyState } from "./EmptyState";
 export { default as VideoDetailHeader } from "./VideoDetailHeader";
+export { default as SharedHeader } from "./SharedHeader";
+export { default as Pagination } from "./Pagination";

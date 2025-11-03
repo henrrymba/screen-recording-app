@@ -1,6 +1,5 @@
-import {EmptyState, Header, VideoCard} from "@/components";
+import { EmptyState, Pagination, SharedHeader, VideoCard } from "@/components";
 import { getAllVideos } from "@/lib/actions/video";
-import React from "react";
 
 const page = async ({ searchParams }: SearchParams) => {
     const { query, filter, page } = await searchParams;
@@ -13,7 +12,7 @@ const page = async ({ searchParams }: SearchParams) => {
 
     return (
         <main className="wrapper page">
-            <Header title="All Videos" subHeader="Public Library"/>
+            <SharedHeader subHeader="Public Library" title="All Videos" />
 
             {videos?.length > 0 ? (
                 <section className="video-grid">
@@ -37,6 +36,15 @@ const page = async ({ searchParams }: SearchParams) => {
                     icon="/assets/icons/video.svg"
                     title="No Videos Found"
                     description="Try adjusting your search."
+                />
+            )}
+
+            {pagination?.totalPages > 1 && (
+                <Pagination
+                    currentPage={pagination.currentPage}
+                    totalPages={pagination.totalPages}
+                    queryString={query}
+                    filterString={filter}
                 />
             )}
         </main>

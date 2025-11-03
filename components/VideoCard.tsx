@@ -25,7 +25,6 @@ const VideoCard = ({
                         <figcaption>
                             <h3>{username}</h3>
                             <p>{visibility}</p>
-                            <p>{id}</p>
                         </figcaption>
                     </figure>
                     <aside>
